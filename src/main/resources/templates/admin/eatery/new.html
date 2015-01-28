@@ -24,12 +24,34 @@
         </div>
     </div>
     <div class="form-group">
-        <label>Text Input</label>
-        <input class="form-control"/>
-        <p class="help-block">Example block-level help text here.</p>
+        <div class="col-md-6">
+        <label th:text="#{eatery.name}"></label>
+        <input class="form-control input-lg"/>
+        </div>
 
+        <div class="col-md-6">
+            <label th:text="#{eatery.tel}"></label>
+            <input class="form-control input-lg"/>
+        </div>
+
+        <div class="col-md-12">
+        <label th:text="#{eatery.address}"></label>
+        <input class="form-control input-lg"/>
+        </div>
+
+        <div class="col-md-6">
+        <label th:text="#{eatery.lat}"></label>
         <input class="form-control"/>
-        <p class="help-block">Example block-level help text here.</p>
+        </div>
+
+        <div class="col-md-6">
+        <label th:text="#{eatery.lng}"></label>
+        <input class="form-control"/>
+        </div>
+
+        <div class="col-md-3">
+            <button type="submit" class="btn btn-primary" th:text="#{eater.admin.new.action}"></button>
+        </div>
     </div>
 </section>
 </body>
